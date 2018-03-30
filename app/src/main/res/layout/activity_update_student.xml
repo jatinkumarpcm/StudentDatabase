@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_margin="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.jatin.studentdatabase.UpdateStudent">
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/et_update_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+
+        app:met_baseColor="@color/colorPrimary"
+        app:met_floatingLabel="highlight"
+        app:met_singleLineEllipsis="true"
+        android:textColorHint="@color/colorPrimary"
+        android:hint="Name" />
+
+    <Spinner
+        android:id="@+id/update_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/et_update_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+
+        app:met_baseColor="@color/colorPrimary"
+        app:met_floatingLabel="highlight"
+        app:met_singleLineEllipsis="true"
+        android:textColorHint="@color/colorPrimary"
+        android:hint="Contact" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/ettotal_fee_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+
+        app:met_baseColor="@color/colorPrimary"
+        app:met_floatingLabel="highlight"
+        app:met_singleLineEllipsis="true"
+        android:textColorHint="@color/colorPrimary"
+        android:hint="Subject" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/etfee_paid_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+
+        app:met_baseColor="@color/colorPrimary"
+        app:met_floatingLabel="highlight"
+        app:met_singleLineEllipsis="true"
+        android:textColorHint="@color/colorPrimary"
+        android:hint="Total Fee" />
+
+    <Button
+        android:id="@+id/btnupdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update" />
+
+</LinearLayout>

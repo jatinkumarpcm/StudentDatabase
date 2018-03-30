@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<LinearLayout
+    android:layout_margin="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_marginTop="20dp"
+                android:id="@+id/etname"
+                android:includeFontPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="gravity"
+                android:inputType="textPersonName"
+
+
+                app:met_floatingLabel="highlight"
+                app:met_singleLineEllipsis="true"
+                android:hint="Name" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etcontact"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:ems="10"
+                android:inputType="number"
+                app:met_baseColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+
+                app:met_floatingLabel="highlight"
+                app:met_singleLineEllipsis="true"
+                android:hint="Contact" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/ettotal_fee"
+                android:layout_width="match_parent"
+                android:ems="10"
+                android:layout_marginTop="10dp"
+                app:met_baseColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+
+                app:met_floatingLabel="highlight"
+                app:met_singleLineEllipsis="true"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Subject" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etfee_paid"
+                android:layout_width="match_parent"
+                android:ems="10"
+                android:layout_marginTop="10dp"
+                app:met_baseColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+
+                app:met_floatingLabel="highlight"
+                app:met_singleLineEllipsis="true"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Total Fee " />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.5"
+                    android:id="@+id/btnsave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save" />
+
+                <Button
+                    android:elevation="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.5"
+                    android:id="@+id/btnsaveAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show All" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+</ScrollView>
